@@ -144,6 +144,6 @@ def test_unregister_returns_404_for_missing_participant(client: TestClient):
         params={"email": "student@mergington.edu"},
     )
 
-    # Assert
+     # Assert
     assert response.status_code == 404
     assert response.json() == {"detail": "Participant not found"}
